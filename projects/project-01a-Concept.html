@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/blog.css">
+    </head>
+    <body>
+        <main>
+            <article>
+                <h5>Project: Interactive text game</h5>
+                <pre><p>
+                    
+                    Concept: 
+                    Create a short-story multiple-choice game that has a reset option upon losing.
+                    Main Grid
+                    Heading
+                    An image, an article of text
+                    Below that are two or three buttons giving you options on what to do next. 
+                    Footer
+                    
+                    Plan:
+                    I want the game to take up most of the screen space
+                    Make sure the page is responsive.
+                    The game stays on one web page.
+                    You win at the end
+                    
+                    Blueprints:  
+                    Create an HTML file containing the following tags; each tag containing the corresponding id attribute.
+                        Main id='gridMain'
+                        heading id='boxHeading'
+                        section id='boxImage'
+                        article id='boxArticle'
+                    div id='buttonFlex
+                        button type='button' class='boxButtons' id='buttonLeft'
+                        button type='button' class='boxButtons'  id='buttonCenter'
+                        button type='button' class='boxButtons'  id='buttonRight'
+                    /div
+                        footer
+                    Create CSS styling for the html elements.
+                        gridMain, max-width: 100%, display:grid, grid-template-column: repeat(5 20%);          auto row min max 200px 100%;
+                        boxHeading, width 100%. Height auto, grid-column: span 1 / 5, row: 1;
+                        boxImage: width 100%. Grid-column: 1 / 5, row 2, background-size:cover,
+                        boxArticle: width: 100% height auto, grid-column: 5, row 2,
+                        buttonFlex: width: 100% grid column: 2 / 5, row: 3,
+                    Footer: width 100% grid-column: span 1 / 5, row 4,
+                        
+                    Create javascript:
+                    Let count = 0;
+                    Options[op01, op02, op03, op04, op05, op06, op07, op08, op09, op10];
+                    Const imageBox = getElementById(‘boxImage’);
+                    Const articleBox = getElementById(‘boxArticle’);
+                    
+                    document.addEventListner(‘click’, forward);
+                    
+                    Function buttonLeft() { GameDisplay[options[‘count’], count++] }
+                    Function ButtonCenter() { GameDisplay[options[‘count’], count += 2] }
+                    Function ButtonCenter() { GameDisplay[options[‘count’], count += 3] }
+                    //original screen
+                    Options[0] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //theres snakes now. What do you do?
+                    //fail
+                    Options[1] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //first fail snakes
+                    Options[2] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //success snakes
+                    Options[3] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //theres bear now, run away, stand still, or attack the bear?
+                    
+                    //fail bear
+                    Options[4] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //success bear :now the bear is angry! Attack it, yell and wave arms, or run away?
+                    Options[5] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //fail bear - you attack bear it kill you
+                    Options[6] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //fail
+                    Options[7] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //success you ran away safely. Your against wall: climb, fight bear, run away
+                    Options[8] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //fail
+                    Options[9] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //success, Stand your ground, jump over bear, climb the wall
+                    Options[10] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //fail - bear slashed you
+                    Options[11] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    //success jumped over bear. Kick bear, run away, kick sand
+                    Options[12] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    
+                    //fail bear slashes
+                    Options[13] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    
+                    //fail bear slashes
+                    Options[14] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    
+                    //success bear can’t see. Attack bear? Run away, kick more sand
+                    Options[15] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    
+                    //fail bear slash
+                    Options[16] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    
+                    //success You Ran Away! You win.
+                    Options[17] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    
+                    //success slashes aimlessly and grabs leg.
+                    Options[18] = imageBox.style.backgroundimage url'';
+                                        articleBox.innerHTML = ' all the text '
+                    
+                    
+                    
+
+
+                </p></pre>
+            </article>
+        </main>
+        <h6><a href="/index.html" title="Back to Home">Back to the Home Page</a></h6>
+        <script src="" async defer></script>
+    </body>
+</html>
